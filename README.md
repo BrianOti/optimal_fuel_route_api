@@ -46,13 +46,13 @@ Routing is handled via a free routing API
 
 🏗 Architecture
 routeplanner/
-
-── services/
-   ── routing.py          # External routing API logic
-   ── fuel_optimizer.py   # Fuel stop & cost calculations
-
-── models.py               # FuelStation model
-── views.py                # API endpoint logic
+│
+├── services/
+│   ├── routing.py          # External routing API logic
+│   ├── fuel_optimizer.py   # Fuel stop & cost calculations
+│
+├── models.py               # FuelStation model
+├── views.py                # API endpoint logic
 
 Separation of Concerns
 
@@ -144,9 +144,6 @@ Fuel stations are filtered using:
 
 Route geometry returned by routing API
 
-Haversine distance formula
-
-Configurable radius threshold
 
 Geometry sampling to improve performance
 
@@ -170,19 +167,6 @@ Minimal database queries
 
 Lightweight JSON responses
 
-🔮 Possible Future Improvements
-
-Segment-based fuel optimization (per 500-mile chunk)
-
-Caching routing results
-
-Real-time fuel price updates
-
-Redis caching layer
-
-Frontend map visualization
-
-Docker containerization
 
 🛠 Tech Stack
 
@@ -192,6 +176,6 @@ Django
 
 Django REST Framework
 
-External Routing API
+External Routing API (OpenRoute Service)
 
 SQLite / PostgreSQL
