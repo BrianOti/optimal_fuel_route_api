@@ -46,12 +46,19 @@ Routing is handled via a free routing API
 
 🏗 Architecture
 routeplanner/
+
 │
+
 ├── services/
-│   ├── routing.py          # External routing API logic
-│   ├── fuel_optimizer.py   # Fuel stop & cost calculations
+
+├── routing.py          # External routing API logic
+
+├── fuel_optimizer.py   # Fuel stop & cost calculations
+
 │
+
 ├── models.py               # FuelStation model
+
 ├── views.py                # API endpoint logic
 
 Separation of Concerns
