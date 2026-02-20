@@ -72,6 +72,7 @@ views.py → Orchestrates request/response logic
 This ensures clean, maintainable code.
 
 ⚙️ Installation
+
 1️⃣ Clone Repository
 git clone https://github.com/yourusername/route-fuel-api.git
 cd route-fuel-api
@@ -105,6 +106,7 @@ Import CSV data into FuelStation model.
 python manage.py runserver
 
 🚀 API Usage
+
 Endpoint
 POST /api/route/
 
